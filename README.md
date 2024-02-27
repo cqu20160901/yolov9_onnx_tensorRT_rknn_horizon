@@ -1,7 +1,7 @@
 # yolov9_onnx_tensorRT_rknn_horizon
 yolov9 部署，便于移植不同平台（onnx、tensorRT、rknn、Horizon），全网首个通用部署示例。
 
-导出onnx参考[【yolov9 瑞芯微RKNN和地平线Horizon芯片仿真测试部署，部署工程难度小、模型推理速度快】](https://blog.csdn.net/zhangqian_1/article/details/135523096)。
+导出onnx参考[【yolov9 瑞芯微芯片rknn部署、地平线芯片Horizon部署、TensorRT部署】](https://blog.csdn.net/zhangqian_1/article/details/136321979)。
 
 # 文件夹结构说明
 
