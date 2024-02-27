@@ -15,15 +15,19 @@ yolov9n_horizon：地平线模型、测试（量化）图像、测试结果、�
 
 由于模型文件比较大，所有的模型文件放在[【onnx模型、rknn模型、trt模型、地平线模型】](https://github.com/cqu20160901/yolov9_onnx_tensorRT_rknn_horizon/releases/tag/v1.0)
 
+
+# 模型训练
+
+在 yolov9 官方代码上把“SiLU激活函数替换成了RelU”，由于是有些平台还不支持SiLU，详细训练参考yolov9官方代码。
+
 # 测试结果
 
 pytorch测试结果
 
 ![test](https://github.com/cqu20160901/yolov9_onnx_tensorRT_rknn_horizon/assets/22290931/5708d6a5-e8fd-4feb-9aa0-61e6267407d3)
 
-
 onnx测试效果
 
 ![image](https://github.com/cqu20160901/yolov9_onnx_tensorRT_rknn_horizon/blob/main/yolov9_onnx/test_onnx_result.jpg)
 
-说明：推理测试预处理没有考虑等比率缩放，激活函数 SiLU 用 Relu 进行了替换。由于使用训练数据不多，且迭代的次数不多，效果并不是很好，仅供测试流程用。
+说明：推理测试预处理没有考虑等比率缩放，使用训练数据不多，且迭代的次数不多，效果并不是很好，仅供测试流程用。
